@@ -1,27 +1,27 @@
 # 🏋️ Workout Tracker API (Backend Only)
 
-This is the backend for a full-stack workout tracking app. It’s built with **Node.js**, **Express**, and **MongoDB**, and supports basic CRUD functionality (Create, Read, Update, Delete) for managing workout entries.
+This is the backend for a full-stack workout tracking application. It's built using **Node.js**, **Express**, and **MongoDB**, and provides full CRUD (Create, Read, Update, Delete) functionality for managing workouts.
 
-> ⚠️ Note: This is a **work in progress**. The frontend has not been built yet, but the backend is mostly functional.
+> ⚠️ **Note**: This is a **work in progress**. The backend is mostly functional, but the frontend has not been built yet.
 
 ---
 
 ## 🚀 Features
 
 - Create a new workout
-- Get all workouts
-- Get a single workout by ID
-- Update a workout
+- Retrieve all workouts
+- Retrieve a single workout by ID
+- Update an existing workout
 - Delete a workout
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Node.js
-- Express
-- MongoDB + Mongoose
-- REST API
+- **Node.js**
+- **Express**
+- **MongoDB** (via **Mongoose**)
+- **REST API**
 
 ---
 
@@ -36,43 +36,57 @@ workout-api/
 ├── server.js # Main server file
 └── package.json # Project metadata and scripts
 
-📬 API Routes
-Method	Route	Description
-GET	/api/workouts	Get all workouts
-GET	/api/workouts/:id	Get a workout by ID
-POST	/api/workouts	Create a new workout
-PATCH	/api/workouts/:id	Update a workout
-DELETE	/api/workouts/:id	Delete a workout
+yaml
+Copy
+Edit
 
-🧰 Scripts
-npm run dev: Runs server with nodemon
+---
 
-npm start: Runs server normally (without nodemon)
+## 📬 API Routes
 
-📌 Current Status
-✅ Backend functionality is mostly complete
+| Method | Route                | Description            |
+|--------|----------------------|------------------------|
+| GET    | `/api/workouts`      | Get all workouts       |
+| GET    | `/api/workouts/:id`  | Get a workout by ID    |
+| POST   | `/api/workouts`      | Create a new workout   |
+| PATCH  | `/api/workouts/:id`  | Update a workout       |
+| DELETE | `/api/workouts/:id`  | Delete a workout       |
 
-🚧 Frontend is not yet developed
+---
 
-🐞 May still have bugs or edge cases to fix
+## 🧰 Scripts
 
-🎯 Learning Goals
-This app was built to learn:
+| Command         | Description                          |
+|-----------------|--------------------------------------|
+| `npm run dev`   | Runs the server using **nodemon**    |
+| `npm start`     | Runs the server normally             |
 
-REST API development
+---
 
-MongoDB and Mongoose integration
+## 📌 Current Status
 
-CRUD operations with Express
+- ✅ Backend functionality is mostly complete
+- 🚧 Frontend is **not yet developed**
+- 🐞 May still have bugs or edge cases to fix
 
-Environment configuration with .env
+---
 
-📍 Future Improvements
-Build a full frontend using Next.js
+## 🎯 Learning Goals
 
-Add user authentication
+This project was created to practice:
 
-Improve error handling and validation
+- REST API development
+- MongoDB and Mongoose integration
+- CRUD operations with Express
+- Managing environment variables with `.env`
 
-Deploy full-stack version to Vercel or Render
+---
 
+## 📍 Future Improvements
+
+- Build a frontend using **Next.js**
+- Add user authentication and authorization
+- Improve input validation and error handling
+- Deploy the full-stack app to **Render**, **Vercel**, or **Railway**
+
+---
